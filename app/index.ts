@@ -10,6 +10,7 @@ import book from './src/book'
 dotenv.config()
 const PORT = process.env.PORT || 3000
 swaggerOptions.host = `${process.env.HOST || swaggerOptions.host}:${PORT}`
+console.log(swaggerOptions.host)
 
 const app = express()
 app.use(bodyParser.json())
@@ -26,5 +27,5 @@ app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 
 connectDB().then(DBmsg => {
   console.log(DBmsg)
-  app.listen(PORT, () => console.log(`Listening on port ${process.env.PORT}`))
+  app.listen(PORT, () => console.log(`Listening on port ${PORT}`))
 })
