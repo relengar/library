@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "ts-node ./app/index.ts",
     "start:dev": "nodemon --inspect ./app/index.ts",
