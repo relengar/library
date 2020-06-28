@@ -8,7 +8,7 @@
       "email": "andrej.delmar@gmail.com"
     }
   },
-  "host": "pacific-inlet-17006.herokuapp.com",
+  "host": "localhost",
   "basePath": "/",
   "tags": [
     {
