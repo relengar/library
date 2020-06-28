@@ -9,7 +9,7 @@ import book from './src/book'
 
 dotenv.config()
 const PORT = process.env.PORT || 3000
-swaggerOptions.host = `${swaggerOptions.host}:${PORT}`
+swaggerOptions.host = `${process.env.HOST || swaggerOptions.host}:${PORT}`
 
 const app = express()
 app.use(bodyParser.json())
