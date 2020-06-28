@@ -9,7 +9,8 @@ import book from './src/book'
 
 dotenv.config()
 const PORT = process.env.PORT || 3000
-swaggerOptions.host = `${process.env.HOST || swaggerOptions.host}:${
+const HOST = process.env.HOST || 'localhost'
+swaggerOptions.host = `${HOST}:${
   process.env.NODE_ENV === 'production' ? '' : PORT
 }`
 
