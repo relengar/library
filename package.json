@@ -1,0 +1,38 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./app/index.ts",
+    "start:dev": "nodemon --inspect ./app/index.ts",
+    "test": "mocha -r ts-node/register app/**/*test.ts"
+  },
+  "keywords": [],
+  "author": "Andrej Delmar <andrej.delmar@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1",
+    "mongoose": "^5.9.20",
+    "morgan": "^1.10.0",
+    "swagger-ui-express": "^4.1.4",
+    "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/express": "^4.17.6",
+    "@types/mocha": "^7.0.2",
+    "@types/mongoose": "^5.7.28",
+    "@types/morgan": "^1.9.1",
+    "@types/node": "^14.0.14",
+    "@types/swagger-ui-express": "^4.1.2",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "nodemon": "^2.0.4",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2"
+  }
+}
